@@ -11,6 +11,8 @@ def test_sort(browserInstance):
 
     driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers")
 
+    assert "GreenKart" in driver.title, "Page title does not match!"
+
     BrowserSortedVeg = []
 
     # click on cloumn header

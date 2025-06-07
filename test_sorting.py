@@ -18,7 +18,7 @@ def test_sort(browserInstance):
     # click on cloumn header
     driver.find_element(By.XPATH, "//span[text() = 'Veg/fruit name']").click()
 
-    # to collect vegitable details
+    # to collect vegetable details from the table
     SelSortedVeg = driver.find_elements(By.CSS_SELECTOR, "tr td:nth-of-type(1)")
 
     for ele in SelSortedVeg:
